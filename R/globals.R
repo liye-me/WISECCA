@@ -1,0 +1,20 @@
+utils::globalVariables(
+    c(
+        "age",
+        "cv_correlation",
+        "estimate",
+        "feature",
+        "label",
+        "lower",
+        "observed",
+        "penalty_x",
+        "penalty_z",
+        "predicted",
+        "score_x",
+        "score_z",
+        "selection_frequency",
+        "stable",
+        "upper",
+        "weight"
+    )
+)

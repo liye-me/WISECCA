@@ -1,0 +1,34 @@
+Package: WISECCA
+Type: Package
+Title: Weighted Co-expression Network-Informed Sparse Integrative
+    Canonical Correlation Analysis
+Version: 0.1.0
+Authors@R:
+    person(
+        given = "Ye",
+        family = "Li",
+        email = "liye_me@stu.xjtu.edu.cn",
+        role = c("aut", "cre")
+    )
+Description: Provides a unified workflow for weighted co-expression
+    module construction, sparse canonical correlation analysis,
+    animal-level cross-validation, block-bootstrap stability assessment,
+    LASSO regression, and mixed-effects analysis of imaging-omics
+    associations.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends:
+    R (>= 4.3.0)
+Roxygen: list(markdown = TRUE)
+Imports: 
+    emmeans,
+    ggplot2,
+    glmnet,
+    lme4,
+    PMA,
+    WGCNA
+Suggests: 
+    testthat
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 7.3.2
