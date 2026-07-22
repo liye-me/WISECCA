@@ -1,6 +1,3 @@
----
-output: github_document
----
 
 # WISECCA
 
@@ -17,13 +14,13 @@ modeling.
 
 Install the development version from GitHub:
 
-```r
+``` r
 remotes::install_github("liye-me/WISECCA")
 ```
 
 Load the package:
 
-```r
+``` r
 library(WISECCA)
 ```
 
@@ -47,7 +44,7 @@ observations in the same order.
 
 ## Main workflow
 
-```r
+``` r
 result <- wisecca(
   omics = omics,
   imaging = imaging,
@@ -66,16 +63,16 @@ result <- wisecca(
 
 The main workflow includes:
 
-1. Input validation
-2. WGCNA module construction
-3. Animal-level sparse CCA cross-validation
-4. Final sparse CCA fitting
-5. Animal-block bootstrap analysis
+1.  Input validation
+2.  WGCNA module construction
+3.  Animal-level sparse CCA cross-validation
+4.  Final sparse CCA fitting
+5.  Animal-block bootstrap analysis
 
 ## Main functions
 
 | Function | Purpose |
-|---|---|
+|----|----|
 | `wise_check_input()` | Validate and match input data |
 | `wise_modules()` | Construct weighted co-expression modules |
 | `wise_scca()` | Fit a sparse CCA model |
@@ -87,7 +84,7 @@ The main workflow includes:
 
 ## Visualization
 
-```r
+``` r
 plot(result, type = "scores")
 plot(result, type = "cv")
 plot(result, type = "weights", side = "x")
@@ -97,7 +94,7 @@ plot(result, type = "bootstrap", side = "z")
 Optional results can be plotted after enabling the corresponding
 analyses:
 
-```r
+``` r
 plot(result, type = "lasso")
 plot(result, type = "mixed")
 ```
