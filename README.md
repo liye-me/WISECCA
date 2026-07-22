@@ -1,6 +1,8 @@
 
 # WISECCA
 
+![WISECCA workflow](man/figures/WISECCA_workflow.png)
+
 WISECCA implements **Weighted co-expression network-Informed Sparse
 intEgrative Canonical Correlation Analysis** for integrating molecular
 omics data with neuroimaging features.
